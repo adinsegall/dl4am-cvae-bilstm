@@ -1,6 +1,6 @@
 # dl4am-cvae-bilstm
 
-Loop-aware audio generation in PyTorch: a BiLSTM-with-attention classifier learns what makes a drum recording *loopable*, and its confidence signal steers latent-space manipulation of a conditional VAE trained on mel-spectrograms — so the combined pipeline generates audio biased toward seamless loops. Coursework project for Deep Learning for Audio & Music (ECS7013P) at Queen Mary University of London.
+Loop-aware audio generation in PyTorch: a BiLSTM-with-attention classifier learns what makes a drum recording *loopable*, and its confidence signal steers latent-space manipulation of a convolutional VAE trained on mel-spectrograms — so the combined pipeline generates audio biased toward seamless loops. Coursework project for Deep Learning for Audio & Music (ECS7013P) at Queen Mary University of London.
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/adinsegall/dl4am-cvae-bilstm/blob/main/DL4AM_Coursework_Segall.ipynb)
 
@@ -9,7 +9,7 @@ Loop-aware audio generation in PyTorch: a BiLSTM-with-attention classifier learn
 | Model | Data | Best run |
 |---|---|---|
 | BiLSTM + self-attention loop-candidacy classifier | Groove MIDI drum corpus, beat-synchronous features | **val F1 0.977** (2 layers, hidden 128, dropout 0.3) |
-| Conditional VAE over mel-spectrograms | FMA-Small | latent dim 32, lr 1e-4, β = 0.001 |
+| Convolutional VAE over mel-spectrograms | FMA-Small | latent dim 32, lr 1e-4, β = 0.001 |
 
 **Combined inference:** encode audio with the CVAE, nudge the latent vector along directions that raise the BiLSTM's loop-confidence score, decode, and render back to audio with Griffin-Lim.
 
