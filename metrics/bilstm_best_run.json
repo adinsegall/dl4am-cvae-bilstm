@@ -1,0 +1,9 @@
+{
+  "run_id": "bilstm_LSTMAttention_20250427_033257",
+  "model_type": "LSTMAttention",
+  "hidden_dim": 128,
+  "num_layers": 2,
+  "dropout": 0.3,
+  "best_val_f1": 0.9769762759345181,
+  "best_epoch": 36
+}

@@ -1,0 +1,11 @@
+{
+    "params": {
+        "beta": 0.001,
+        "latent_dim": 32,
+        "lr": 0.0001
+    },
+    "run_id": "cvae_latentdim32_lr0.0001_beta0.001_20250422_032258",
+    "timestamp": "20250422_032258",
+    "final_val_loss": 0.7595490538156949,
+    "best_val_loss": 0.7595490538156949
+}

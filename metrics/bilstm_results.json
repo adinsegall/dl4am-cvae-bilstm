@@ -1,0 +1,18 @@
+{
+  "run_id": "bilstm_LSTMAttention_20250426_000959",
+  "params": {
+    "model_type": "LSTMAttention",
+    "input_dim": 271,
+    "hidden_dim": 256,
+    "num_layers": 2,
+    "num_heads": 4,
+    "dropout": 0.3,
+    "lr": 0.001,
+    "epochs": 50
+  },
+  "best_val_f1": 0.9824069042672207,
+  "best_val_precision": 0.9754786207596994,
+  "best_val_recall": 0.9894343072742959,
+  "best_val_accuracy": 0.9679358717434869,
+  "best_epoch": 11
+}
